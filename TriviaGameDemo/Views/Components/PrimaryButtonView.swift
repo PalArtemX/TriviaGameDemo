@@ -21,7 +21,9 @@ struct PrimaryButtonView: View {
                 Image(systemName: systemName)
                     .symbolRenderingMode(.hierarchical)
                 Text(text)
+                    .fontWeight(.bold)
             }
+            
             .font(.title3)
             .padding(.horizontal)
         }

@@ -13,6 +13,8 @@
 		F8F82BEB280D99B4002E5D3F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BEA280D99B4002E5D3F /* Color.swift */; };
 		F8F82BED280D9EB3002E5D3F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BEC280D9EB3002E5D3F /* HomeView.swift */; };
 		F8F82BF0280D9ED1002E5D3F /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BEF280D9ED1002E5D3F /* PrimaryButtonView.swift */; };
+		F8F82BF2280DA454002E5D3F /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BF1280DA454002E5D3F /* HeadlineView.swift */; };
+		F8F82BF4280DA5D9002E5D3F /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BF3280DA5D9002E5D3F /* Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		F8F82BEA280D99B4002E5D3F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F8F82BEC280D9EB3002E5D3F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F8F82BEF280D9ED1002E5D3F /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
+		F8F82BF1280DA454002E5D3F /* HeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
+		F8F82BF3280DA5D9002E5D3F /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F82BEA280D99B4002E5D3F /* Color.swift */,
+				F8F82BF3280DA5D9002E5D3F /* Text.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F82BEF280D9ED1002E5D3F /* PrimaryButtonView.swift */,
+				F8F82BF1280DA454002E5D3F /* HeadlineView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -186,6 +192,8 @@
 				F8F82BED280D9EB3002E5D3F /* HomeView.swift in Sources */,
 				F8F82BF0280D9ED1002E5D3F /* PrimaryButtonView.swift in Sources */,
 				F8F82BD9280D997C002E5D3F /* TriviaGameDemoApp.swift in Sources */,
+				F8F82BF2280DA454002E5D3F /* HeadlineView.swift in Sources */,
+				F8F82BF4280DA5D9002E5D3F /* Text.swift in Sources */,
 				F8F82BEB280D99B4002E5D3F /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

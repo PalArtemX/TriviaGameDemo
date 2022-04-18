@@ -10,7 +10,9 @@ import SwiftUI
 
 
 struct ColorTheme {
-    
+    let background = Color("Background")
+    let buttonGreen = Color("ButtonGreen")
+    let buttonRed = Color("ButtonRed")
 }
 
 extension Color {

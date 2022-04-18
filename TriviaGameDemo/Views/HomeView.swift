@@ -11,7 +11,19 @@ struct HomeView: View {
 
     
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            // MARK: - Background
+            Color.colorTheme.background
+                .ignoresSafeArea()
+            
+            VStack(spacing: 35.0) {
+                HeadlineView()
+                
+                PrimaryButtonView(text: "Let's Go!",color: .accentColor, systemName: "circle.square") {
+                    //
+                }
+            }
+        }
     }
 }
 
