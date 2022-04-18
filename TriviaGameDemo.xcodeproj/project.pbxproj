@@ -11,6 +11,7 @@
 		F8F82BDB280D997C002E5D3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BDA280D997C002E5D3F /* ContentView.swift */; };
 		F8F82BDD280D997D002E5D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F82BDC280D997D002E5D3F /* Assets.xcassets */; };
 		F8F82BE0280D997D002E5D3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F82BDF280D997D002E5D3F /* Preview Assets.xcassets */; };
+		F8F82BEB280D99B4002E5D3F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BEA280D99B4002E5D3F /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F8F82BDA280D997C002E5D3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8F82BDC280D997D002E5D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8F82BDF280D997D002E5D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8F82BEA280D99B4002E5D3F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,10 @@
 			children = (
 				F8F82BD8280D997C002E5D3F /* TriviaGameDemoApp.swift */,
 				F8F82BDA280D997C002E5D3F /* ContentView.swift */,
+				F8F82BE9280D99A4002E5D3F /* Views */,
+				F8F82BE8280D999D002E5D3F /* ViewModels */,
+				F8F82BE7280D9996002E5D3F /* Models */,
+				F8F82BE6280D998F002E5D3F /* Extensions */,
 				F8F82BDC280D997D002E5D3F /* Assets.xcassets */,
 				F8F82BDE280D997D002E5D3F /* Preview Content */,
 			);
@@ -65,6 +71,35 @@
 				F8F82BDF280D997D002E5D3F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8F82BE6280D998F002E5D3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8F82BEA280D99B4002E5D3F /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8F82BE7280D9996002E5D3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8F82BE8280D999D002E5D3F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8F82BE9280D99A4002E5D3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			files = (
 				F8F82BDB280D997C002E5D3F /* ContentView.swift in Sources */,
 				F8F82BD9280D997C002E5D3F /* TriviaGameDemoApp.swift in Sources */,
+				F8F82BEB280D99B4002E5D3F /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
