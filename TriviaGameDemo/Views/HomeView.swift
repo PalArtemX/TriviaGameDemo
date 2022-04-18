@@ -8,21 +8,30 @@
 import SwiftUI
 
 struct HomeView: View {
-
+    @State private var isActive = false
     
     var body: some View {
-        ZStack {
-            // MARK: - Background
-            Color.colorTheme.background
-                .ignoresSafeArea()
-            
-            VStack(spacing: 35.0) {
-                HeadlineView()
+        NavigationView {
+            ZStack {
+                // MARK: - Background
+                Color.colorTheme.background
+                    .ignoresSafeArea()
                 
-                PrimaryButtonView(text: "Let's Go!",color: .accentColor, systemName: "circle.square") {
-                    //
+                VStack(spacing: 50.0) {
+                    HeadlineView()
+                    
+                    NavigationLink(isActive: $isActive) {
+                        TriviaView()
+                    } label: {
+                        PrimaryButtonView(text: "Let's Go!",color: .accentColor, systemName: "circle.square") {
+                            isActive.toggle()
+                        }
+                    }
+                    Spacer()
+
                 }
             }
+            .navigationBarHidden(true)
         }
     }
 }
