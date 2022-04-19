@@ -18,7 +18,10 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 50.0) {
+                    Spacer()
                     HeadlineView()
+                    
+                    Spacer()
                     
                     NavigationLink(isActive: $isActive) {
                         TriviaView()
@@ -28,7 +31,6 @@ struct HomeView: View {
                         }
                     }
                     Spacer()
-
                 }
             }
             .navigationBarHidden(true)

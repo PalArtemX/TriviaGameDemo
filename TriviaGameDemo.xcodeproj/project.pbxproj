@@ -21,6 +21,8 @@
 		F8F82BFC280DCE34002E5D3F /* AnswerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BFB280DCE34002E5D3F /* AnswerRowView.swift */; };
 		F8F82BFE280DCF40002E5D3F /* PreviewAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BFD280DCF40002E5D3F /* PreviewAnswer.swift */; };
 		F8F82C00280DD8AF002E5D3F /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82BFF280DD8AF002E5D3F /* TriviaView.swift */; };
+		F8F82C02280E0563002E5D3F /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82C01280E0563002E5D3F /* Trivia.swift */; };
+		F8F82C04280E09B1002E5D3F /* TriviaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F82C03280E09B1002E5D3F /* TriviaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		F8F82BFB280DCE34002E5D3F /* AnswerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRowView.swift; sourceTree = "<group>"; };
 		F8F82BFD280DCF40002E5D3F /* PreviewAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewAnswer.swift; sourceTree = "<group>"; };
 		F8F82BFF280DD8AF002E5D3F /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		F8F82C01280E0563002E5D3F /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		F8F82C03280E09B1002E5D3F /* TriviaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F82BF9280DCD9A002E5D3F /* Answer.swift */,
+				F8F82C01280E0563002E5D3F /* Trivia.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 		F8F82BE8280D999D002E5D3F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F8F82C03280E09B1002E5D3F /* TriviaViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -219,6 +225,8 @@
 				F8F82BEB280D99B4002E5D3F /* Color.swift in Sources */,
 				F8F82BFC280DCE34002E5D3F /* AnswerRowView.swift in Sources */,
 				F8F82BFE280DCF40002E5D3F /* PreviewAnswer.swift in Sources */,
+				F8F82C02280E0563002E5D3F /* Trivia.swift in Sources */,
+				F8F82C04280E09B1002E5D3F /* TriviaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

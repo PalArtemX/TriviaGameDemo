@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TriviaGameDemoApp: App {
+    
+    @StateObject var triviaVM = TriviaViewModel()
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(triviaVM)
         }
     }
 }
