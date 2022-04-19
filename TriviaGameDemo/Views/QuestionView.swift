@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct QuestionView: View {
+    @EnvironmentObject var triviaVM: TriviaViewModel
+    
     var body: some View {
         ZStack {
             // MARK: Background
@@ -19,26 +21,30 @@ struct QuestionView: View {
                     Text("Trivia Game")
                         .lilacTitle()
                     Spacer()
-                    Text("1 out of 10")
+                    Text("\(triviaVM.index + 1) out of \(triviaVM.length)")
                         .foregroundColor(.accentColor)
                         .fontWeight(.heavy)
                 }
                 
-                ProgressBarView(progress: 50)
+                ProgressBarView(progress: triviaVM.progress)
                 
                 VStack(alignment: .leading) {
-                    Text("Sound can travel through a vacuum.")
+                    Text(triviaVM.question)
                         .font(.system(size: 20))
                         .bold()
                         .foregroundColor(.accentColor)
                     
-                    AnswerRowView(answer: Answer(text: "False", isCorrect: true))
-                    AnswerRowView(answer: Answer(text: "True", isCorrect: false))
+                    ForEach(triviaVM.answerChoices, id: \.id) { answer in
+                        AnswerRowView(answer: answer)
+                    }
                 }
                 
-                PrimaryButtonView(text: "Next", color: .accentColor, systemName: "chevron.forward.square.fill") {
-                    
+                PrimaryButtonView(text: "Next", color: triviaVM.answerSelected ? .accentColor : .gray.opacity(0.5), systemName: "chevron.forward.square.fill") {
+                    withAnimation(.default) {
+                        triviaVM.goToNextQuestion()
+                    }
                 }
+                .disabled(!triviaVM.answerSelected)
             }
             .padding()
         }
@@ -58,5 +64,6 @@ struct QuestionView: View {
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionView()
+            .environmentObject(TriviaViewModel())
     }
 }

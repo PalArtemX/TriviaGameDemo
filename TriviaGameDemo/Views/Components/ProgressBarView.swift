@@ -13,6 +13,7 @@ struct ProgressBarView: View {
     var body: some View {
         ZStack(alignment: .leading) {
             Rectangle()
+                //.frame(width: 350, height: 5)
                 .frame(maxWidth: 350, maxHeight: 5)
                 .foregroundColor(.gray)
                 .opacity(0.3)

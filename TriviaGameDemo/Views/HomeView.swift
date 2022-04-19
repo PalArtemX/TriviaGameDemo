@@ -25,9 +25,12 @@ struct HomeView: View {
                     
                     NavigationLink(isActive: $isActive) {
                         TriviaView()
+                            .environmentObject(TriviaViewModel())
                     } label: {
                         PrimaryButtonView(text: "Let's Go!",color: .accentColor, systemName: "circle.square") {
-                            isActive.toggle()
+                            withAnimation(.default) {
+                                isActive.toggle()
+                            }
                         }
                     }
                     Spacer()

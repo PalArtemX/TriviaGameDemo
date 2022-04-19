@@ -64,9 +64,15 @@ class TriviaViewModel: ObservableObject {
                     print("Error completion: \(error.localizedDescription)")
                 }
             } receiveValue: { [weak self] returnedTrivia in
-                self?.trivia = returnedTrivia.results
-                self?.length = self?.trivia.count ?? 0
-                self?.setQuestion()
+                if let self = self {
+                    self.index = 0
+                    self.score = 0
+                    self.progress = 0.0
+                    self.reachedEnd = false
+                    self.trivia = returnedTrivia.results
+                    self.length = self.trivia.count
+                    self.setQuestion()
+                }
             }
             .store(in: &cancellable)
     }
@@ -84,18 +90,19 @@ class TriviaViewModel: ObservableObject {
     // MARK: setQuestion
     func setQuestion() {
         answerSelected = false
-        progress = CGFloat(Double(index + 1) / Double(length * 350))
+        progress = CGFloat(Double(index + 1) / Double(length) * 350)
         
         if index < length {
             let currentTriviaQuestion = trivia[index]
             question = currentTriviaQuestion.formattedQuestion
-            answerChoices  = currentTriviaQuestion.answers
+            answerChoices = currentTriviaQuestion.answers
         }
     }
     
     // MARK: selectAnswer
     func selectAnswer(answer: Answer) {
         answerSelected = true
+        
         if answer.isCorrect {
             score += 1
         }
